@@ -49,13 +49,13 @@ function AppContainer() {
     <div className="App">
       <h1>#todo</h1>
       
-      <div className="tab-panel">
+      <div className="header">
         <button onClick={() => handleTabClick("All")}>All</button>
         <button onClick={() => handleTabClick("Active")}>Active</button>
         <button onClick={() => handleTabClick("Completed")}>Completed</button>
       </div>
 
-      <div className="task-input">
+      <div className="task">
         <input
           className="border-4 rounded-lg mr-4"
           type="text"
@@ -71,7 +71,7 @@ function AppContainer() {
           Add
         </button>
       </div>
-      <div className="task-list">
+      <div className="list-todo">
         <ul>
           {filterTodos().map((task) => (
             <li key={task.id}>

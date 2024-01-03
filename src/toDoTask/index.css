@@ -10,7 +10,7 @@
   font-weight: bold;
 }
 
-.tab-panel {
+.header {
   display: flex;
   gap: 150px;
   font-size: 25px;
@@ -19,34 +19,35 @@
   margin-bottom: 15px;
 }
 
-.tab-panel button:focus {
-  background-color: aqua;
+.header button:focus {
+  background-color: lightblue;
   padding: 10px;
   border-radius: 8px;
   border: 1px solid black;
 }
 
-.task-input {
+.task {
   display: flex;
   margin-bottom: 20px;
 }
 
-.task-input input {
+.task input{
   width: 35vw;
   padding: 10px;
   font-size: 25px;
 }
 
-.task-input button {
-  padding: 5px 20px;
-  font-size: 25px;
+.task button {
+  padding: 3px 15px;
+  font-size: 20px;
+  color: lightblue;
 }
 
-.task-list {
-  margin-left: -37%;
+.list-todo {
+  margin-left: -35%;
 }
 
-.task-list li input[type="checkbox"] {
+.list-todo li input[type="checkbox"] {
   margin-right: 10px;
   appearance: none;
   width: 30px;
@@ -60,40 +61,40 @@
   align-items: center;
 }
 
-.task-list li input[type="checkbox"]:checked {
-  background-color: blue;
-  border-color: blue;
+.list-todo li input[type="checkbox"]:checked {
+  background-color: lightblue;
+  border-color: lightblue;
 }
 
-.task-list li input[type="checkbox"]:checked::before {
+.list-todo li input[type="checkbox"]:checked::before {
   content: "\2713";
   color: #fff;
   font-size: 25px;
 }
 
-.task-list li span {
-  font-size: 23px;
+.list-todo li span {
+  font-size: 20px;
 }
 
-.task-input button:hover {
-  background-color: blue;
+.input button:hover {
+  background-color: lightblue;
 }
 
-.task-list {
+.list-todo {
   margin-bottom: 20px;
 }
 
-.task-list ul {
+.list-todo ul {
   list-style-type: none;
   padding: 0;
 }
 
-.task-list li {
+.list-todo li {
   display: flex;
   align-items: center;
 }
 
-.task-list li input {
+.list-todo li input {
   margin-right: 10px;
 }
 
